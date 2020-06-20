@@ -1,0 +1,13 @@
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  border-top: 2px solid $color-grey;
+  .copyBlock {
+    color: $color-grey-fonts;
+    opacity: 0.5;
+    font-size: rem(14);
+  }
+}
