@@ -1,3 +1,70 @@
-.wrapper {
-  padding: 0 35px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: $font-main;
+}
+.landing__main {
+  text-align: center;
+  background-color: $color-grey;
+  height: calc(100vh-110px);
+  width: 100%;
+  .wrapper {
+    padding: 95px 30px 30px;
+  }
+  &--logo {
+    width: 250px;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &--title {
+    margin-top: 30px;
+    font-family: $font-title;
+    color: $color-contrast;
+    font-size: rem(19);
+    text-transform: capitalize;
+  }
+  &--tagline span {
+    color: $color-dark;
+    font-size: rem(12);
+    display: block;
+  }
+  &--steps {
+    margin: 18px auto 38px;
+    border: 1.5px solid transparentize($color-contrast, 0.7);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 260px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(12.5);
+      text-transform: capitalize;
+    }
+    div i {
+      color: $color-contrast;
+      font-size: rem(22);
+    }
+  }
+  .button-startApp {
+    display: inline-block;
+    background-color: $color-medium;
+    border-radius: 25px;
+    padding: 10px 20px;
+    span {
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: rem(16);
+    }
+  }
 }

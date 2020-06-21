@@ -1,13 +1,25 @@
-.footer .wrapper {
+.footer {
+  height: 110px;
+  width: 100%;
+  border-top: 2px solid $color-grey;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  padding: 18px 40px 20px;
   border-top: 2px solid $color-grey;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .copyBlock {
+    margin-bottom: 12px;
     color: $color-grey-fonts;
     opacity: 0.5;
     font-size: rem(14);
+  }
+  .logoBlock img {
+    height: 40px;
+    width: 103px;
   }
 }
