@@ -8,4 +8,9 @@
       grid-column: span 3;
     }
   }
+  .app__options {
+    @include tablet {
+      order: -1;
+    }
+  }
 }
