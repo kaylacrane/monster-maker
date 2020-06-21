@@ -1,0 +1,5 @@
+@mixin tablet {
+  @media all and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}

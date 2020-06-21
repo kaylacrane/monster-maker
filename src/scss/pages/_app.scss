@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  .app__preview,
+  .app__options {
+    grid-column: span 6;
+    @include tablet {
+      grid-column: span 3;
+    }
+  }
+}
