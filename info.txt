@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: MegalopolisExtra-Regular
+font link: http://www.smeltery.net/en/fonts/megalopolis-extra
+font author: SMeltery
+font author site: http://www.smeltery.net/en/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Yaroslav Samoilov
+icon designer link: /Yaosamo
+        
+{"bg":"#BC577D","icon":"#4B2154","font":"#ffffff","slogan":"#ffffff"}
+      

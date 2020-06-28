@@ -1,16 +1,21 @@
 .main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 30px;
+  height: 100vh;
   .app__preview,
   .app__options {
     grid-column: span 6;
-    @include tablet {
-      grid-column: span 3;
-    }
   }
   .app__options {
     @include tablet {
       order: -1;
+      grid-column: span 2;
+    }
+  }
+  .app__preview {
+    @include tablet {
+      grid-column: span 4;
     }
   }
 }

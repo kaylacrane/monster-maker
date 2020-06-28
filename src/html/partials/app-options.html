@@ -1,50 +1,142 @@
 <section class="app__options">
   <form action="" class="form">
     <fieldset class="app__options--design">
-      <legend>Choose a design</legend>
-      <i class="fas fa-chevron-down"></i>
-      <h2>colors</h2>
-      <ul>
+      <div class="section-title js-section-title">
+        <legend>Choose a design</legend>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <h4>colors</h4>
+      <ul class="js-section-content">
         <li>
-          <label for="" class="palette palette-1">
-            <input type="radio" />
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div>
-          </label>
+          <p class="color-background">Background:</p>
+          <label for="color-selector"
+            ><input
+              type="color"
+              id="color-selector"
+              class="js-background-color"
+          /></label>
         </li>
         <li>
-          <label for="" class="palette palette-2"
-            ><input type="radio" />
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div
-          ></label>
+          <p class="color-skin">Skin:</p>
+          <label for="color-selector-skin"
+            ><input type="color" id="color-selector-skin" class="js-skin-color"
+          /></label>
         </li>
         <li>
-          <label for="" class="palette palette-3"
-            ><input type="radio" />
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div
-          ></label>
+          <p class="color-details">Details:</p>
+          <label for="color-selector-details"
+            ><input
+              type="color"
+              id="color-selector-details"
+              class="js-details-color"
+          /></label>
         </li>
       </ul>
     </fieldset>
-    <fieldset class="personalize">
-      <legend>Add your personal info</legend>
-      <label for="" class="full-name">
-        <input type="text" />
-      </label>
-      <label for="" class="profession"><input type="text" /></label>
-      <label for="" class="img-profile"><input type="text" /></label>
-      <label for="" class="email"><input type="text" /></label>
-      <label for="" class="telephone"><input type="text" /></label>
-      <label for="" class="linkedin"><input type="text" /></label>
-      <label for="" class="github"><input type="text" /></label>
+    <fieldset class="app__options--personalize">
+      <div class="section-title js-section-title">
+        <legend>Choose your accessories</legend>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <ul class="js-section-content">
+        <li>
+          <label for="hats">Hats </label>
+          <select id="hats" class="hats">
+            <option value="no-hat" selected>None</option>
+            <option value="wizard" class="hats-options">Wizard</option>
+            <option value="cowboy" class="hats-options">Cowboy</option>
+            <option value="crown" class="hats-options">Crown</option>
+            <option value="party" class="hats-options">Party</option>
+          </select>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="app__options--personalize">
+      <div class="section-title js-section-title">
+        <legend>Add your personal info</legend>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <ul class="js-section-content">
+        <li>
+          <label for="monsterName" class="monsterName"
+            >Your monster's name
+            <input
+              type="text"
+              id="monsterName"
+              name="monsterName"
+              placeholder="Bubbles"
+              class="js-monsterName"
+          /></label>
+        </li>
+        <li>
+          <label for="power" class="power"
+            >Kind of monster<input
+              type="text"
+              id="power"
+              name="power"
+              class="js-power"
+              placeholder="Under the Bed Monster"
+          /></label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="app__options--powers">
+      <div class="section-title js-section-title">
+        <legend>Choose your super powers</legend>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <ul>
+        <li>
+          <label for="flight" class="js-label-power"
+            ><input
+              type="checkbox"
+              id="flight"
+              name="super-power"
+              class="js-flight"
+            />
+            <span>Power of Flight</span>
+          </label>
+        </li>
+        <li>
+          <label for="fire-breather" class="js-label-power"
+            ><input
+              type="checkbox"
+              id="fire-breathe"
+              name="r"
+              class="js-power"
+            />
+            <span>Breathes Fire</span>
+          </label>
+        </li>
+        <li>
+          <label for="invisible" class="js-label-power"
+            ><input
+              type="checkbox"
+              id="invisible"
+              name="super-power"
+              class="js-power"
+            />
+            <span>Invisibility</span>
+          </label>
+        </li>
+        <li>
+          <label for="hungry" class="js-label-power"
+            ><input
+              type="checkbox"
+              id="hungry"
+              name="hungry"
+              class="js-power"
+            />
+            <span>Bottomless Stomach</span>
+          </label>
+        </li>
+      </ul>
     </fieldset>
     <fieldset class="share">
-      <legend>Share your contact card</legend>
+      <div class="section-title js-section-title">
+        <legend>Share your contact card</legend>
+        <i class="fas fa-chevron-down"></i>
+      </div>
       <label for=""><input type="submit" /></label>
       <p>Your card has been created</p>
       <span class="card-url"></span>

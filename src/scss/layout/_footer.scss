@@ -1,12 +1,12 @@
 .footer {
   height: 110px;
   width: 100%;
-  border-top: 2px solid $color-grey;
+  border-top: 2px solid grey;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 18px 40px 20px;
-  border-top: 2px solid $color-grey;
+  border-top: 2px solid grey;
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 
   .copyBlock {
     margin-bottom: 12px;
-    color: $color-grey-fonts;
+    color: grey;
     opacity: 0.5;
     font-size: rem(14);
   }

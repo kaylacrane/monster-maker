@@ -1,12 +1,12 @@
 .app__preview {
-  background-color: $color-grey;
+  background-color: grey;
   padding: 40px 0;
-  .button-box {
-    width: 240px;
-    margin: 0 auto 20px;
+  .btn__reset {
+    margin: auto;
+    margin-top: 10px;
   }
   .btn__reset {
-    border: 2px solid $color-white;
+    border: 2px solid white;
     padding: 8px;
     border-radius: 15px;
     display: flex;
@@ -14,59 +14,146 @@
     width: 90px;
     i,
     span {
-      color: $color-grey-fonts;
+      color: grey;
       font-size: rem(14);
       text-transform: uppercase;
     }
   }
   &--profileCard {
-    box-shadow: 0 0 8px $color-medium;
-    height: 330px;
-    width: 240px;
+    box-shadow: 0 0 8px grey;
+    height: 600px;
+    width: 400px;
     margin: auto;
-    background-color: $color-white;
+    background-color: white;
+    position: relative;
     .topBlock {
-      padding: 20px 0 10px;
-      .fullName {
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 10px 5px;
+      border-bottom: 1px solid grey;
+
+      i {
+        grid-column: span 1;
+        align-self: center;
+        justify-self: center;
+        font-size: rem(20);
+      }
+      span {
+        grid-column: span 4;
+      }
+      .monsterName {
+        font-family: $font-card;
+        font-size: rem(22);
+        font-weight: 700;
+      }
+      .super-power {
         display: block;
         font-family: $font-card;
         font-size: rem(18);
-        color: $color-dark;
+
         font-weight: 700;
-        border-left: 5px solid $color-medium;
-        padding-left: 10px;
-      }
-      .job {
-        display: block;
-        font-family: $font-card;
-        font-size: rem(16);
-        color: $color-grey-fonts;
-        font-weight: 700;
-        border-left: 5px solid $color-medium;
+        border-left: 5px solid $color-pink-dark;
         padding-left: 10px;
       }
     }
     .photo {
-      background-image: url("http://placekitten.com/200/300");
+      overflow: hidden;
       background-size: cover;
-      height: 200px;
       width: 100%;
+      text-align: center;
+      position: relative;
+      padding-top: 10px;
+
+      .head-top {
+        display: flex;
+        justify-content: space-around;
+        .hat {
+          position: absolute;
+          font-size: 70px;
+          width: 100%;
+          height: fit-content;
+          margin: auto;
+          color: rgb(21, 96, 131);
+          visibility: hidden;
+        }
+
+        .horn-left,
+        .horn-right {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-bottom: 90px solid rgb(187, 116, 128);
+        }
+        .horn-left {
+          transform: rotate(-15deg);
+        }
+        .horn-right {
+          transform: rotate(15deg);
+        }
+      }
+      .head {
+        position: relative;
+        transform: translateY(-20px);
+        background-color: rgb(236, 150, 225);
+        height: 300px;
+        width: 300px;
+        border-radius: 35%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        .eyes {
+          font-size: 20px;
+          padding-top: 40px;
+        }
+        .nose {
+          font-size: 55px;
+        }
+        .mouth {
+          font-size: 90px;
+          transform: rotate(-70deg);
+        }
+      }
+      .neck {
+        background-color: rgb(236, 150, 225);
+        transform: translateY(-20px);
+        height: 150px;
+        width: 200px;
+        border-radius: 40%;
+        margin: auto;
+      }
     }
-    .socialMedia {
+
+    .super-powers {
       display: flex;
+      justify-content: space-around;
       padding: 10px 20px;
-      li a {
-        margin: 0 5px;
-        border: 2px solid $color-light;
+      height: fit-content;
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      border-top: 1px solid grey;
+      background-color: white;
+      li {
+        border: 5px solid rgb(126, 48, 48);
         border-radius: 50%;
-        color: $color-dark;
-        font-size: rem(18);
-        display: inline-block;
-        height: 32px;
-        width: 32px;
+        padding: 10px;
+        height: fit-content;
+        width: fit-content;
         text-align: center;
-        line-height: 30px;
+        i {
+          font-size: 35px;
+        }
       }
     }
   }
+}
+
+.icon-source {
+  display: none;
+}
+.js-monster-color-details {
+  color: pink;
 }

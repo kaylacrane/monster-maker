@@ -1,33 +1,30 @@
 .landing__main {
   text-align: center;
-  background-color: $color-grey;
-  height: calc(100vh - 110px);
+  background-color: rgb(236, 150, 225);
+  height: 100vh;
   width: 100%;
-  .wrapper {
-    padding: 95px 30px 30px;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   &--logo {
-    width: 250px;
     margin: auto;
-    img {
-      width: 100%;
-    }
+    width: 600px;
   }
   &--title {
     margin-top: 30px;
     font-family: $font-title;
-    color: $color-contrast;
+    color: rgb(85, 27, 80);
     font-size: rem(19);
     text-transform: capitalize;
   }
   &--tagline span {
-    color: $color-dark;
+    color: grey;
     font-size: rem(12);
     display: block;
   }
   &--steps {
     margin: 18px auto 38px;
-    border: 1.5px solid transparentize($color-contrast, 0.7);
+    border: 1.5px solid rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -40,18 +37,18 @@
       text-transform: capitalize;
     }
     div i {
-      color: $color-contrast;
+      color: rgb(219, 61, 180);
       font-size: rem(22);
     }
   }
   .button-startApp {
     display: inline-block;
-    background-color: $color-medium;
+    background-color: rgb(235, 51, 173);
     border-radius: 25px;
     padding: 10px 20px;
     span {
       text-transform: uppercase;
-      color: $color-white;
+      color: white;
       font-size: rem(16);
     }
   }
