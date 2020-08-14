@@ -19,6 +19,7 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
+		"html2canvas": "^1.0.0-rc.5",
 		"run-sequence": "*"
 	},
 	"devDependencies": {

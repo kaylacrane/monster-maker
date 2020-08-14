@@ -1,5 +1,13 @@
 'use strict';
 
+/* querySelector function */
+function sel(className) {
+  return document.querySelector(className);
+}
+/* to create a constant using querySelector */
+const constantName = sel('.class-name');
+console.log(sel('.hats').classList);
+
 /* to change background color */
 const backgroundColorSelector = document.querySelector('.js-background-color');
 
